@@ -6,8 +6,8 @@ This repository contains the data, code and other materials used in the followin
 
 Alfredo Sánchez-Tójar*,  Aya Bezine, Marija Purgar, Antica Culina. *In Preparation*. **Code-sharing policies are associated with increased reproducibility potential of ecological findings**.
 
-*For any further information, please contact: [Alfredo Sánchez-Tójar](https://scholar.google.co.uk/citations?hl=en&user=Sh-Rjq8AAAAJ&view_op=list_works&sortby=pubdate), email: alfredo.tojar@gmail.com
 ---
+*For any further information, please contact: [Alfredo Sánchez-Tójar](https://scholar.google.co.uk/citations?hl=en&user=Sh-Rjq8AAAAJ&view_op=list_works&sortby=pubdate), email: alfredo.tojar@gmail.com
 
 The repository consists of an Rproject ([analyses.Rproj](https://github.com/ASanchez-Tojar/code-sharing_policies_matter/blob/main/analyses.Rproj)) with 3 scripts and 3 folders containing the data either needed to run these scripts or created by the scripts, including the figures. For a detailed description of all the files, please see below. For any further information about this repository, please contact: [Alfredo Sánchez-Tójar](https://scholar.google.co.uk/citations?hl=en&user=Sh-Rjq8AAAAJ&view_op=list_works&sortby=pubdate), email: alfredo.tojar@gmail.com. 
 
