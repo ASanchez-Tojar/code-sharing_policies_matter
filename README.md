@@ -23,4 +23,4 @@ Folders:
 
 ### Notes:
 
-See details of the licence of this repository in [LICENSE.txt] (TBA).
+The licence for this project is available [here](https://github.com/ASanchez-Tojar/code-sharing_policies_matter/tree/main?tab=MIT-1-ov-file).
