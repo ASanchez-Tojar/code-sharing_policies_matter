@@ -263,7 +263,7 @@ figure1b
 # Exporting Figure 1
 ################################################################################
 
-tiff("../figures/Figure1ab.tiff",
+tiff("../figures/Figure1.tiff",
      height = 12, width = 28,
      units = 'cm', compression = "lzw", res = 600)
 
@@ -960,7 +960,7 @@ figure2h
 # Exporting Figure 2
 ################################################################################
 
-tiff("../figures/Figure2ab.tiff",
+tiff("../figures/Figure2.tiff",
      height = 27, width = 21,
      units = 'cm', compression = "lzw", res = 600)
 
