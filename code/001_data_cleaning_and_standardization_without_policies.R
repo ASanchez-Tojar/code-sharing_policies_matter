@@ -811,7 +811,8 @@ data.shared.per.period.perc
 
 # articles with both full code and full data
 nrow(stats.data[stats.data$CodeShared=="yes" & stats.data$DataShared=="yes",])
-round((nrow(stats.data[stats.data$CodeShared=="yes" & stats.data$DataShared=="yes",])/nrow(stats.data))*100,1)
+round((nrow(stats.data[stats.data$CodeShared=="yes" & stats.data$DataShared=="yes",
+                       ])/nrow(stats))*100,1) #using stats instead of stats.data to integrate those studies that did not use data but would be reproducible as long as the provided the code
 
 
 ################################################################################
