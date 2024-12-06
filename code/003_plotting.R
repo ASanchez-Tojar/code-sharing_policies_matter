@@ -14,7 +14,7 @@
 # Packages needed
 ################################################################################
 
-pacman::p_load(stringr,openxlsx,dplyr,ggplot2,patchwork,ggpattern)
+pacman::p_load(stringr,readxl,dplyr,ggplot2,patchwork,ggpattern)
 
 # Clear memory
 rm(list=ls())
