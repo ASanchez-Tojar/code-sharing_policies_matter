@@ -38,11 +38,10 @@ CapStr <- function(y) {
 ################################################################################
 
 # importing data for 2015-2016
-db.2015.16 <- read_excel("data/raw_databases/Code_data_table_2016V2.xlsx")
+db.2015.16 <- read_excel("data/raw_databases/code_availability_without_policies_raw_data_2015-2016.xlsx")
 
 # importing data for 2018-2019
-db.2018.19 <- read_excel("data/raw_databases/Code_data_table_2019_v1.xlsx")
-
+db.2018.19 <- read_excel("data/raw_databases/code_availability_without_policies_raw_data_2018-2019.xlsx")
 
 ################################################################################
 # Standardizing databases

@@ -38,7 +38,7 @@ CapStr <- function(y) {
 ################################################################################
 
 Culina.et.al.2020 <- as.data.frame(
-  read_excel("data/raw_databases/Culina_et_al_2020_clean_data_AB_final.xlsx")
+  read_excel("data/raw_databases/code_availability_with_policies_raw_data_2015-2019.xlsx")
 )
 
 nrow(Culina.et.al.2020)
