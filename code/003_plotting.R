@@ -26,7 +26,7 @@ rm(list=ls())
 
 ################################################################################
 # importing all clean data for journals without a code-sharing policy
-db.full <- read.table("../data/clean_databases/code_availability_without_policies_full_and_clean.csv",
+db.full <- read.table("data/clean_databases/code_availability_without_policies_full_and_clean.csv",
                       header=T,sep=",")
 
 
@@ -58,7 +58,7 @@ round(table(db.full.no.data.NA$DataShared)/nrow(db.full.no.data.NA)*100,1)
 
 ################################################################################
 # importing all clean data for journals with a code-sharing policy
-db.full.Culina <- read.table("../data/clean_databases/code_availability_with_policies_full_and_clean.csv",
+db.full.Culina <- read.table("data/clean_databases/code_availability_with_policies_full_and_clean.csv",
                              header=T,sep=",")
 
 # standardizing NA's
@@ -263,7 +263,7 @@ figure1b
 # Exporting Figure 1
 ################################################################################
 
-tiff("../figures/Figure1.tiff",
+tiff("figures/Figure1.tiff",
      height = 12, width = 28,
      units = 'cm', compression = "lzw", res = 600)
 
@@ -960,7 +960,7 @@ figure2h
 # Exporting Figure 2
 ################################################################################
 
-tiff("../figures/Figure2.tiff",
+tiff("figures/Figure2.tiff",
      height = 27, width = 21,
      units = 'cm', compression = "lzw", res = 600)
 

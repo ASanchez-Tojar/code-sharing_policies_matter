@@ -38,10 +38,10 @@ CapStr <- function(y) {
 ################################################################################
 
 # importing data for 2015-2016
-db.2015.16 <- read_excel("../data/raw_databases/Code_data_table_2016V2.xlsx")
+db.2015.16 <- read_excel("data/raw_databases/Code_data_table_2016V2.xlsx")
 
 # importing data for 2018-2019
-db.2018.19 <- read_excel("../data/raw_databases/Code_data_table_2019_v1.xlsx")
+db.2018.19 <- read_excel("data/raw_databases/Code_data_table_2019_v1.xlsx")
 
 
 ################################################################################
@@ -997,5 +997,5 @@ db.full.organized <- db.full.organized[db.full.organized$statistical.analysis.an
 
 
 write.csv(db.full.organized,
-          "../data/clean_databases/code_availability_without_policies_full_and_clean.csv",
+          "data/clean_databases/code_availability_without_policies_full_and_clean.csv",
           row.names=FALSE)

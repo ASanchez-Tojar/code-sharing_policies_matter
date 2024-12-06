@@ -38,7 +38,7 @@ CapStr <- function(y) {
 ################################################################################
 
 Culina.et.al.2020 <- as.data.frame(
-  read_excel("../data/raw_databases/Culina_et_al_2020_clean_data_AB_final.xlsx")
+  read_excel("data/raw_databases/Culina_et_al_2020_clean_data_AB_final.xlsx")
 )
 
 nrow(Culina.et.al.2020)
@@ -531,7 +531,7 @@ stats.Culina.et.al.2020$FreeSoftware <- ifelse(stats.Culina.et.al.2020$software_
 # to complete the cleaning and standardization of the variable FreeSoftware,
 # we are going to use the information from the database without policies, which
 # we have polished consistently
-stats.no.policies <- read.table("../data/clean_databases/code_availability_without_policies_full_and_clean.csv",
+stats.no.policies <- read.table("data/clean_databases/code_availability_without_policies_full_and_clean.csv",
                                 header=T,sep=",")
 
 # generating a vector containing free software
@@ -890,7 +890,7 @@ names(stats.Culina.et.al.2020.organized)
 
 
 write.csv(stats.Culina.et.al.2020.organized,
-          "../data/clean_databases/code_availability_with_policies_full_and_clean.csv",
+          "data/clean_databases/code_availability_with_policies_full_and_clean.csv",
           row.names=FALSE)
 
 # ################################################################################
