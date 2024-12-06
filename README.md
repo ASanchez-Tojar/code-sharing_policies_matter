@@ -44,6 +44,4 @@ Running under: Windows 10 x64 (build 19044)
 - {ggplot2} v.3.5.1
 - {readxl} v.1.4.3
 - {dplyr} v.1.1.4
-- {openxlsx} v.4.2.5.2
-- {stringr} v.1.5.1   
-
+- {stringr} v.1.5.1
