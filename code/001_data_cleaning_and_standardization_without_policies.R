@@ -15,7 +15,7 @@
 # Packages needed
 ################################################################################
 
-pacman::p_load(stringr,openxlsx,dplyr,readxl)
+pacman::p_load(stringr,readxl,dplyr)
 
 # Clear memory
 rm(list=ls())

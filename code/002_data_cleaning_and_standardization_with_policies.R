@@ -16,7 +16,7 @@
 # Packages needed
 ################################################################################
 
-pacman::p_load(stringr,openxlsx,dplyr,readxl)
+pacman::p_load(stringr,dplyr,readxl)
 
 # Clear memory
 rm(list=ls())
@@ -892,28 +892,3 @@ names(stats.Culina.et.al.2020.organized)
 write.csv(stats.Culina.et.al.2020.organized,
           "data/clean_databases/code_availability_with_policies_full_and_clean.csv",
           row.names=FALSE)
-
-# ################################################################################
-# # exploring the reporting of versions: packages # wrong includes NA's
-# 
-# # is the variable numeric? Yes
-# is.numeric(stats.Culina.et.al.2020$'#packages.calculated')
-# 
-# # number of articles using packages
-# table(stats.Culina.et.al.2020$'#packages.calculated'>0)
-# 
-# # percentage of articles for which not all package version was provided
-# round((nrow(stats.Culina.et.al.2020[stats.Culina.et.al.2020$'#packages.calculated' > 0 &
-#                                           (stats.Culina.et.al.2020$'#packages.calculated' > 
-#                                              stats.Culina.et.al.2020$'#packages_with_version'),
-# ])/
-#   nrow(stats.Culina.et.al.2020[stats.Culina.et.al.2020$'#packages.calculated' > 0,
-#   ]))*100,1)
-# 
-# # raw number
-# nrow(stats.Culina.et.al.2020[stats.Culina.et.al.2020$'#packages.calculated' > 0,]) - 
-#   nrow(stats.Culina.et.al.2020[stats.Culina.et.al.2020$'#packages.calculated' > 0 &
-#                                  (stats.Culina.et.al.2020$'#packages.calculated' > 
-#                                     stats.Culina.et.al.2020$'#packages_with_version'),
-#   ])
-
