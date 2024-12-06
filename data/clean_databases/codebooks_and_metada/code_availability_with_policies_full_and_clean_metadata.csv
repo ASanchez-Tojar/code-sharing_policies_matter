@@ -1,27 +1,27 @@
-name,data_type,n_missing,complete_rate,n_unique,empty,count,min,median,max,mean,sd,whitespace,description
-doi,character,0,1,346,0,,14,,25,,,0,
-Journal,character,0,1,14,0,,7,,54,,,0,
-Publication_year,numeric,0,1,,,,2015,2018,2019,2016.910405,1.430741718,,
-Publication_year.2,character,0,1,2,0,,9,,9,,,0,
-statistical.analysis.and.or.simulations.2,character,0,1,1,0,,3,,3,,,0,
-bioinformatic.analysis,character,0,1,3,0,,2,,3,,,0,
-additional.comment.on.analysis,character,0,1,193,0,,2,,148,,,0,
-analysis_software_names,character,0,1,126,0,,1,,158,,,0,
-num.software.calculated,numeric,35,0.898843931,,,,1,1,14,1.807073955,1.833755566,,
-num.software_with_version,numeric,35,0.898843931,,,,0,1,13,1.135048232,1.640542765,,
-num.packages,character,0,1,11,0,,1,,2,,,0,
-num.packages.calculated,character,0,1,11,0,,1,,2,,,0,
-num.packages_with_version,character,0,1,10,0,,1,,2,,,0,
-CodeShared,character,0,1,3,0,,2,,9,,,0,
-CodeShared.2,character,0,1,2,0,,2,,3,,,0,
-LinktoCode,character,0,1,93,0,,2,,171,,,0,
-LocationShared,character,0,1,8,0,,2,,33,,,0,
-Repository,character,0,1,9,0,,2,,17,,,0,
-FreeSoftware,character,0,1,4,0,,2,,9,,,0,
-FreeSoftware.2,character,0,1,3,0,,2,,3,,,0,
-DataUsed,character,0,1,2,0,,2,,3,,,0,
-DataShared,character,0,1,4,0,,2,,9,,,0,
-DataShared.2,character,0,1,3,0,,2,,3,,,0,
-ExtraComments,character,0,1,125,0,,2,,381,,,0,
-comments_AB,character,340,0.01734104,4,0,,11,,36,,,0,
-comments_on_AB,logical,346,0,,,:,,,,,,,
+name,data_type,n_missing,complete_rate,n_unique,empty,count,min,median,max,mean,sd,whitespace,description,db.full.Culina
+doi,character,0,1,346,0,,14,,25,,,0,article DOI,
+Journal,character,0,1,14,0,,7,,54,,,0,journal where the article was published,
+Publication_year,numeric,0,1,,,,2015,2018,2019,2016.910405,1.430741718,,year of publication,
+Publication_year.2,character,0,1,2,0,,9,,9,,,0,year of publication categorized as 2015-2016 vs 2018-2019,
+statistical.analysis.and.or.simulations.2,character,0,1,1,0,,3,,3,,,0,did article use statistical analyses or simulations,yes/no
+bioinformatic.analysis,character,0,1,3,0,,2,,3,,,0,did article use bioinfromatic analyses,yes/no
+additional.comment.on.analysis,character,0,1,193,0,,2,,148,,,0,list of the types of statistical analyses and or ssimulations used (as mentioned in the article; keep in mind that this list might not be complete),
+analysis_software_names,character,0,1,126,0,,1,,158,,,0,list of  software used for statistical analyses and/or simulations,
+num.software.calculated,numeric,35,0.898843931,,,,1,1,14,1.807073955,1.833755566,,number of software used for statistical analyses and/or simulations for which the version was provided,
+num.software_with_version,numeric,35,0.898843931,,,,0,1,13,1.135048232,1.640542765,,number of software used for statistical analyses and/or simulations for which the version was provided,
+num.packages,character,0,1,11,0,,1,,2,,,0,number of packages used for statistical analyses and/or simulations,
+num.packages.calculated,character,0,1,11,0,,1,,2,,,0,number of packages used for statistical analyses and/or simulations,
+num.packages_with_version,character,0,1,10,0,,1,,2,,,0,number of packages used for statistical analyses and/or simulations for which the version was provided,
+CodeShared,character,0,1,3,0,,2,,9,,,0,whether the analytical code was shared,yes/no/partially
+CodeShared.2,character,0,1,2,0,,2,,3,,,0,whether the analytical code was shared,yes/no
+LinktoCode,character,0,1,93,0,,2,,171,,,0,"if code was shared, provide the link to where the code is available",
+LocationShared,character,0,1,8,0,,2,,33,,,0,where the code was shared,
+Repository,character,0,1,9,0,,2,,17,,,0,the repository where the code was shared,
+FreeSoftware,character,0,1,4,0,,2,,9,,,0,is the software used for statisitcal anaysis free to use ,yes/no/partially
+FreeSoftware.2,character,0,1,3,0,,2,,3,,,0,is the software used for statisitcal anaysis free to use ,yes/no
+DataUsed,character,0,1,2,0,,2,,3,,,0,did the article used any data other than simulated data,yes/no
+DataShared,character,0,1,4,0,,2,,9,,,0,"if data were used, specify whether it was shared or not",yes/no/partially
+DataShared.2,character,0,1,3,0,,2,,3,,,0,"if data were used, specify whether it was shared or not",yes/no
+ExtraComments,character,0,1,125,0,,2,,381,,,0,any extra comments,
+comments_AB,character,340,0.01734104,4,0,,11,,36,,,0,any extra comments on comments,
+comments_on_AB,logical,346,0,,,:,,,,,,,any extra comments on comments on comments,

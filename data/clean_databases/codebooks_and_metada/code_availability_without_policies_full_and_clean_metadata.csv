@@ -1,26 +1,26 @@
-name,data_type,n_missing,complete_rate,n_unique,empty,min,median,max,mean,sd,whitespace,description
-Title,character,0,1,314,0,25,,196,,,0,
-Journal,character,0,1,12,0,5,,66,,,0,
-Publication_year,numeric,0,1,,,2015,2017,2019,2016.914013,1.38069569,,
-Publication_year.2,character,0,1,2,0,9,,9,,,0,
-statistical.analysis.and.or.simulations,character,0,1,1,0,3,,3,,,0,
-bioinformatic.analysis,character,0,1,2,0,2,,3,,,0,
-additional.comment.on.analysis,character,0,1,306,0,2,,350,,,0,
-analysis_software_names,character,0,1,71,0,1,,118,,,0,
-num.software.calculated,numeric,37,0.882165605,,,1,1,6,1.270758123,0.677519829,,
-num.software_with_version,character,0,1,6,0,1,,2,,,0,
-num.packages,character,0,1,9,0,1,,2,,,0,
-num.packages_with_version,character,0,1,8,0,1,,2,,,0,
-CodeShared,character,0,1,3,0,2,,9,,,0,
-CodeShared.2,character,0,1,2,0,2,,3,,,0,
-LinktoCode,character,0,1,16,0,2,,84,,,0,
-LocationShared,character,0,1,4,0,2,,22,,,0,
-Repository,character,0,1,2,0,2,,5,,,0,
-FreeSoftware,character,0,1,4,0,2,,9,,,0,
-FreeSoftware.2,character,0,1,3,0,2,,3,,,0,
-DataUsed,character,0,1,2,0,2,,3,,,0,
-DataShared,character,0,1,4,0,2,,9,,,0,
-DataShared.2,character,0,1,3,0,2,,3,,,0,
-ExtraComments,character,0,1,178,0,2,,1010,,,0,
-CommentonComments,character,0,1,2,0,2,,208,,,0,
-Screener,character,0,1,14,0,6,,11,,,0,
+name,data_type,n_missing,complete_rate,n_unique,empty,min,median,max,mean,sd,whitespace,description,additional_information
+Title,character,0,1,314,0,25,,196,,,0,article title,
+Journal,character,0,1,12,0,5,,66,,,0,journal where the article was published,
+Publication_year,numeric,0,1,,,2015,2017,2019,2016.914013,1.38069569,,year of publication,
+Publication_year.2,character,0,1,2,0,9,,9,,,0,year of publication categorized as 2015-2016 vs 2018-2019,
+statistical.analysis.and.or.simulations,character,0,1,1,0,3,,3,,,0,did article use statistical analyses or simulations,yes/no
+bioinformatic.analysis,character,0,1,2,0,2,,3,,,0,did article use bioinfromatic analyses,yes/no
+additional.comment.on.analysis,character,0,1,306,0,2,,350,,,0,list of the types of statistical analyses and or ssimulations used (as mentioned in the article; keep in mind that this list might not be complete),
+analysis_software_names,character,0,1,71,0,1,,118,,,0,list of  software used for statistical analyses and/or simulations,
+num.software.calculated,numeric,37,0.882165605,,,1,1,6,1.270758123,0.677519829,,number of software used for statistical analyses and/or simulations for which the version was provided,
+num.software_with_version,character,0,1,6,0,1,,2,,,0,number of software used for statistical analyses and/or simulations for which the version was provided,
+num.packages,character,0,1,9,0,1,,2,,,0,number of packages used for statistical analyses and/or simulations,
+num.packages_with_version,character,0,1,8,0,1,,2,,,0,number of packages used for statistical analyses and/or simulations for which the version was provided,
+CodeShared,character,0,1,3,0,2,,9,,,0,whether the analytical code was shared,yes/no/partially
+CodeShared.2,character,0,1,2,0,2,,3,,,0,whether the analytical code was shared,yes/no
+LinktoCode,character,0,1,16,0,2,,84,,,0,"if code was shared, provide the link to where the code is available",
+LocationShared,character,0,1,4,0,2,,22,,,0,where the code was shared,
+Repository,character,0,1,2,0,2,,5,,,0,the repository where the code was shared,
+FreeSoftware,character,0,1,4,0,2,,9,,,0,is the software used for statisitcal anaysis free to use ,yes/no/partially
+FreeSoftware.2,character,0,1,3,0,2,,3,,,0,is the software used for statisitcal anaysis free to use ,yes/no
+DataUsed,character,0,1,2,0,2,,3,,,0,did the article used any data other than simulated data,yes/no
+DataShared,character,0,1,4,0,2,,9,,,0,"if data were used, specify whether it was shared or not",yes/no/partially
+DataShared.2,character,0,1,3,0,2,,3,,,0,"if data were used, specify whether it was shared or not",yes/no
+ExtraComments,character,0,1,178,0,2,,1010,,,0,any extra comments,
+CommentonComments,character,0,1,2,0,2,,208,,,0,any extra comments on comments,
+Screener,character,0,1,14,0,6,,11,,,0,initials of the person who extracted data from the paper,
