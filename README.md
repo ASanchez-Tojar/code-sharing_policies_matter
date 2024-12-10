@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/894514086.svg)](https://doi.org/10.5281/zenodo.14357339)
+
 # Short title: Code-sharing policies matter
 ## Title: Code-sharing policies are associated with increased reproducibility potential of ecological findings
 **Contributors:** Alfredo Sánchez-Tójar, Aya Bezine, Marija Purgar, Antica Culina
