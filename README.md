@@ -14,7 +14,7 @@
 
 ---
 
-Alfredo Sánchez-Tójar, Aya Bezine, Marija Purgar, Antica Culina. 2025. **Code-sharing policies are associated with increased reproducibility potential of ecological findings**. EcoEvoRxiv. Preprint available at: DOI
+Alfredo Sánchez-Tójar, Aya Bezine, Marija Purgar, Antica Culina. 2024. **Code-sharing policies are associated with increased reproducibility potential of ecological findings**. EcoEvoRxiv. Preprint available at: [DOI](https://doi.org/10.32942/X21S7H)
 
 ---
 
