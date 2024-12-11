@@ -10,7 +10,7 @@
 
 **Category:** Project
 
-**Project License:** [MIT](https://github.com/ASanchez-Tojar/code-sharing_policies_matter/tree/main?tab=MIT-1-ov-file)
+**Code License:** [MIT](https://github.com/ASanchez-Tojar/code-sharing_policies_matter/tree/main?tab=MIT-1-ov-file)
 
 **Data License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1)
 
