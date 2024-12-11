@@ -12,6 +12,8 @@
 
 **Project License:** [MIT](https://github.com/ASanchez-Tojar/code-sharing_policies_matter/tree/main?tab=MIT-1-ov-file)
 
+**Data License:** [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1)
+
 **Description:** This repository contains the data, code and other materials used in the following study:
 
 ---
