@@ -16,6 +16,8 @@
 # Packages needed
 ################################################################################
 
+# if not already installed, run:
+#install.packages("pacman")
 pacman::p_load(stringr,dplyr,readxl)
 
 # Clear memory
