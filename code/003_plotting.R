@@ -281,7 +281,7 @@ dev.off()
 
 
 ################################################################################
-# Figure 2
+# Figure 3
 ################################################################################
 
 ################################################################################
@@ -348,7 +348,7 @@ mean.stated <- mean(full.summary.software[full.summary.software$type=="Yes","per
 
 
 # Stacked barplot with multiple groups
-figure2a <- full.summary.software %>%
+figure3a <- full.summary.software %>%
   mutate(type = factor(type, levels = c("No","Yes"))) %>%
   ggplot() +
   geom_bar(aes(y = percentage, x = Publication_year.2, fill = type), stat = "identity", colour = "black") +
@@ -368,7 +368,7 @@ figure2a <- full.summary.software %>%
     legend.position="none"
   )
 
-figure2a
+figure3a
 
 
 ################################################################################
@@ -429,7 +429,7 @@ fill <- c("grey98", "grey5")
 mean.stated.Culina <- mean(full.summary.software.Culina[full.summary.software.Culina$type=="Yes","percentage"])
 
 # Stacked barplot with multiple groups
-figure2b <- full.summary.software.Culina %>%
+figure3b <- full.summary.software.Culina %>%
   mutate(type = factor(type, levels = c("No","Yes")),
          code.sharing.policy = factor(code.sharing.policy, levels = c("Yes","No"))) %>%
   ggplot() +
@@ -450,7 +450,7 @@ figure2b <- full.summary.software.Culina %>%
     axis.title.x = element_blank()
   )
 
-figure2b
+figure3b
 
 
 # # ################################################################################
@@ -526,7 +526,7 @@ mean.stated.version <- mean(full.summary.software.version[full.summary.software.
 
 
 # Stacked barplot with multiple groups
-figure2c <- full.summary.software.version %>%
+figure3c <- full.summary.software.version %>%
   mutate(type = factor(type, levels = c("No","Yes"))) %>%
   ggplot() +
   geom_bar(aes(y = percentage, x = Publication_year.2, fill = type), stat = "identity", colour = "black") +
@@ -546,7 +546,7 @@ figure2c <- full.summary.software.version %>%
     legend.position="none"
   )
 
-figure2c
+figure3c
 
 
 ################################################################################
@@ -610,7 +610,7 @@ mean.stated.version.Culina <- mean(full.summary.software.version.Culina[full.sum
 
 
 # Stacked barplot with multiple groups
-figure2d <- full.summary.software.version.Culina %>%
+figure3d <- full.summary.software.version.Culina %>%
   mutate(type = factor(type, levels = c("No","Yes"))) %>%
   ggplot() +
   geom_bar_pattern(aes(y = percentage, x = Publication_year.2, fill = type), 
@@ -630,7 +630,7 @@ figure2d <- full.summary.software.version.Culina %>%
     axis.title.x = element_blank()
   )
 
-figure2d
+figure3d
 
 
 ################################################################################
@@ -697,7 +697,7 @@ mean.stated.package.version <- mean(full.summary.package.version[full.summary.pa
 
 
 # Stacked barplot with multiple groups
-figure2e <- full.summary.package.version %>%
+figure3e <- full.summary.package.version %>%
   mutate(type = factor(type, levels = c("No","Yes"))) %>%
   ggplot() +
   geom_bar(aes(y = percentage, x = Publication_year.2, fill = type), stat = "identity", colour = "black") +
@@ -717,7 +717,7 @@ figure2e <- full.summary.package.version %>%
     legend.position="none"
   )
 
-figure2e
+figure3e
 
 
 ################################################################################
@@ -784,7 +784,7 @@ mean.stated.package.version.Culina <- mean(full.summary.package.version.Culina[f
 
 
 # Stacked barplot with multiple groups
-figure2f <- full.summary.package.version.Culina %>%
+figure3f <- full.summary.package.version.Culina %>%
   mutate(type = factor(type, levels = c("No","Yes"))) %>%
   ggplot() +
   geom_bar_pattern(aes(y = percentage, x = Publication_year.2, fill = type), 
@@ -804,7 +804,7 @@ figure2f <- full.summary.package.version.Culina %>%
     axis.title.x = element_blank()
   )
 
-figure2f
+figure3f
 
 
 ################################################################################
@@ -866,7 +866,7 @@ mean.free <- mean(full.summary.free[full.summary.free$type=="All free","percenta
 
 
 # Stacked barplot with multiple groups
-figure2g <- full.summary.free %>%
+figure3g <- full.summary.free %>%
   mutate(type = factor(type, levels = c("None free", "Partially free", "All free"))) %>%
   ggplot() +
   geom_bar(aes(y = percentage, x = Publication_year.2, fill = type), stat = "identity", colour = "black") +
@@ -886,7 +886,7 @@ figure2g <- full.summary.free %>%
     legend.position="none"
   )
 
-figure2g
+figure3g
 
 
 ################################################################################
@@ -943,7 +943,7 @@ mean.free.Culina <- mean(full.summary.free.Culina[full.summary.free.Culina$type=
 
 
 # Stacked barplot with multiple groups
-figure2h <- full.summary.free.Culina %>%
+figure3h <- full.summary.free.Culina %>%
   mutate(type = factor(type, levels = c("None free", "Partially free", "All free"))) %>%
   ggplot() +
   geom_bar_pattern(aes(y = percentage, x = Publication_year.2, fill = type), 
@@ -963,36 +963,36 @@ figure2h <- full.summary.free.Culina %>%
     axis.title.x = element_blank()
   )
 
-figure2h
+figure3h
 
 
 ################################################################################
-# Exporting Figure 2
+# Exporting Figure 3
 ################################################################################
 
-tiff("figures/Figure2.tiff",
+tiff("figures/Figure3.tiff",
      height = 27, width = 21,
      units = 'cm', compression = "lzw", res = 600)
 
-figure2 <- figure2a + 
+figure3 <- figure3a + 
   labs(title = c("a: No code-sharing policy")) +
-  figure2b +
+  figure3b +
   labs(title = c("b: Code-sharing policy")) +
-  figure2c + 
+  figure3c + 
   labs(title = c("c: No code-sharing policy")) +
-  figure2d +
+  figure3d +
   labs(title = c("d: Code-sharing policy")) +
-  figure2e + 
+  figure3e + 
   labs(title = c("e: No code-sharing policy")) +
-  figure2f +
+  figure3f +
   labs(title = c("f: Code-sharing policy")) +
-  figure2g + 
+  figure3g + 
   labs(title = c("g: No code-sharing policy")) +
-  figure2h +
+  figure3h +
   labs(title = c("h: Code-sharing policy")) +
   plot_layout(ncol = 2, nrow = 4)
 
-print(figure2)
+print(figure3)
 
 dev.off()
 
