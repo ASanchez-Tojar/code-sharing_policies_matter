@@ -344,15 +344,15 @@ full.summary.software
 
 fill <- c("grey98", "grey5")
 
-mean.not.stated <- mean(full.summary.software[full.summary.software$type=="No","percentage"])
+mean.stated <- mean(full.summary.software[full.summary.software$type=="Yes","percentage"])
 
 
 # Stacked barplot with multiple groups
 figure2a <- full.summary.software %>%
-  mutate(type = factor(type, levels = c("Yes","No"))) %>%
+  mutate(type = factor(type, levels = c("No","Yes"))) %>%
   ggplot() +
   geom_bar(aes(y = percentage, x = Publication_year.2, fill = type), stat = "identity", colour = "black") +
-  geom_hline(yintercept = mean.not.stated, color = "red", linetype = "dashed") +
+  geom_hline(yintercept = mean.stated, color = "red", linetype = "dashed") +
   labs(y = "Percentage (%) of articles", fill = "Reported software") +
   scale_fill_manual(values = fill) +
   scale_y_continuous(breaks = seq(0, 100, 20), expand = expand_scale(mult = c(0, 0.05))) +
@@ -426,16 +426,16 @@ full.summary.software.Culina
 
 fill <- c("grey98", "grey5")
 
-mean.not.stated.Culina <- mean(full.summary.software.Culina[full.summary.software.Culina$type=="No","percentage"])
+mean.stated.Culina <- mean(full.summary.software.Culina[full.summary.software.Culina$type=="Yes","percentage"])
 
 # Stacked barplot with multiple groups
 figure2b <- full.summary.software.Culina %>%
-  mutate(type = factor(type, levels = c("Yes","No")),
+  mutate(type = factor(type, levels = c("No","Yes")),
          code.sharing.policy = factor(code.sharing.policy, levels = c("Yes","No"))) %>%
   ggplot() +
   geom_bar_pattern(aes(y = percentage, x = Publication_year.2, fill = type,), 
                    stat = "identity", colour = "black", pattern = "circle") +
-  geom_hline(yintercept = mean.not.stated.Culina, color = "red", linetype = "dashed") +
+  geom_hline(yintercept = mean.stated.Culina, color = "red", linetype = "dashed") +
   labs(y = "Percentage (%) of articles", fill = "Reported software") +
   scale_fill_manual(values = fill) +
   scale_y_continuous(breaks = seq(0, 100, 20), expand = expand_scale(mult = c(0, 0.05))) +
@@ -475,7 +475,8 @@ db.full.software$software.version.provided <- ifelse((db.full.software$num.softw
                                                         db.full.software$num.software_with_version),
                                                      "no",
                                                      "yes")
-
+table(db.full.software$software.version.provided)
+table(db.full.software$software.version.provided)/nrow(db.full.software)
 
 # calculating number of studies that reported the software version used
 software.version.reported <- as.data.frame(db.full.software %>% 
@@ -559,6 +560,9 @@ db.full.software.Culina$software.version.provided <- ifelse((db.full.software.Cu
                                                                db.full.software.Culina$num.software_with_version),
                                                             "no",
                                                             "yes")
+table(db.full.software.Culina$software.version.provided)
+table(db.full.software.Culina$software.version.provided)/nrow(db.full.software.Culina)
+
 
 # calculating number of studies that reported the software version used
 software.version.reported.Culina <- as.data.frame(db.full.software.Culina %>% 
@@ -645,6 +649,8 @@ db.full.package$package.version.provided <- ifelse((db.full.package$num.packages
                                                    "no",
                                                    "yes")
 
+table(db.full.package$package.version.provided)
+table(db.full.package$package.version.provided)/nrow(db.full.package)
 
 # calculating number of studies that reported the package version used
 package.version.reported <- as.data.frame(db.full.package %>% 
@@ -726,6 +732,8 @@ db.full.package.Culina$package.version.provided <- ifelse((db.full.package.Culin
                                                           "no",
                                                           "yes")
 
+table(db.full.package.Culina$package.version.provided)
+table(db.full.package.Culina$package.version.provided)/nrow(db.full.package.Culina)
 
 # calculating number of studies that reported the package versions used
 package.version.reported.Culina <- as.data.frame(db.full.package.Culina %>% 
