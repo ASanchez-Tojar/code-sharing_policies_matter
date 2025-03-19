@@ -156,7 +156,8 @@ full.summary$percentage <- (full.summary$CodeShared/full.summary$n)*100
 full.summary
 
 
-fill <- c("grey98", "grey35", "grey5")
+#fill <- c("grey98", "grey35", "grey5")
+fill <- c("darkslategray2", "darkslategray4", "darkslategray")
 
 # Stacked barplot with multiple groups
 figure1a <- full.summary %>% 
@@ -237,8 +238,8 @@ full.data.summary
 #write.xlsx(full.data.summary, "results/full.data.summary.xlsx")
 
 # choosing colours manually
-fill <- c("grey98", "grey35","grey5")
-
+#fill <- c("grey98", "grey35","grey5")
+fill <- c("darkslategray2", "darkslategray4", "darkslategray")
 
 # Stacked barplot with multiple groups
 figure1b <- full.data.summary %>% 
@@ -342,7 +343,8 @@ full.summary.software$code.sharing.policy <- "No"
 full.summary.software
 
 
-fill <- c("grey98", "grey5")
+#fill <- c("grey98", "grey5")
+fill <- c("cadetblue2", "cadetblue4")
 
 mean.stated <- mean(full.summary.software[full.summary.software$type=="Yes","percentage"])
 
@@ -355,6 +357,7 @@ figure3a <- full.summary.software %>%
   geom_hline(yintercept = mean.stated, color = "red", linetype = "dashed") +
   labs(y = "Percentage (%) of articles", fill = "Reported software") +
   scale_fill_manual(values = fill) +
+  #scale_fill_viridis(discrete=T, direction = -1) +
   scale_y_continuous(breaks = seq(0, 100, 20), expand = expand_scale(mult = c(0, 0.05))) +
   theme(
     panel.grid.major = element_blank(),
@@ -370,6 +373,9 @@ figure3a <- full.summary.software %>%
 
 figure3a
 
+# # extracting colours
+# g <- ggplot_build(figure3a)
+# unique(g$data[[1]]["fill"])
 
 ################################################################################
 # Journals with a code-sharing policy
@@ -424,7 +430,9 @@ full.summary.software.Culina$code.sharing.policy <- "Yes"
 
 full.summary.software.Culina
 
-fill <- c("grey98", "grey5")
+#fill <- c("grey98", "grey5")
+fill <- c("lightblue1", "lightblue4")
+
 
 mean.stated.Culina <- mean(full.summary.software.Culina[full.summary.software.Culina$type=="Yes","percentage"])
 
@@ -433,11 +441,13 @@ figure3b <- full.summary.software.Culina %>%
   mutate(type = factor(type, levels = c("No","Yes")),
          code.sharing.policy = factor(code.sharing.policy, levels = c("Yes","No"))) %>%
   ggplot() +
-  geom_bar_pattern(aes(y = percentage, x = Publication_year.2, fill = type,), 
-                   stat = "identity", colour = "black", pattern = "circle") +
+  # geom_bar_pattern(aes(y = percentage, x = Publication_year.2, fill = type,), 
+  #                  stat = "identity", colour = "black", pattern = "circle") +
+  geom_bar(aes(y = percentage, x = Publication_year.2, fill = type), stat = "identity", colour = "black") +
   geom_hline(yintercept = mean.stated.Culina, color = "red", linetype = "dashed") +
   labs(y = "Percentage (%) of articles", fill = "Reported software") +
   scale_fill_manual(values = fill) +
+  #scale_fill_viridis(discrete=TRUE) +
   scale_y_continuous(breaks = seq(0, 100, 20), expand = expand_scale(mult = c(0, 0.05))) +
   theme(
     panel.grid.major = element_blank(),
@@ -520,7 +530,8 @@ full.summary.software.version
 # write.xlsx(full.summary, "results/full_Code_summary.xlsx")
 
 
-fill <- c("grey98", "grey5")
+#fill <- c("grey98", "grey5")
+fill <- c("cadetblue2", "cadetblue4")
 
 mean.stated.version <- mean(full.summary.software.version[full.summary.software.version$type=="Yes","percentage"])
 
@@ -604,7 +615,8 @@ full.summary.software.version.Culina$code.sharing.policy <- "Yes"
 full.summary.software.version.Culina
 
 
-fill <- c("grey98", "grey5")
+#fill <- c("grey98", "grey5")
+fill <- c("lightblue1", "lightblue4")
 
 mean.stated.version.Culina <- mean(full.summary.software.version.Culina[full.summary.software.version.Culina$type=="Yes","percentage"])
 
@@ -613,8 +625,9 @@ mean.stated.version.Culina <- mean(full.summary.software.version.Culina[full.sum
 figure3d <- full.summary.software.version.Culina %>%
   mutate(type = factor(type, levels = c("No","Yes"))) %>%
   ggplot() +
-  geom_bar_pattern(aes(y = percentage, x = Publication_year.2, fill = type), 
-                   stat = "identity", colour = "black", pattern = "circle") +
+  # geom_bar_pattern(aes(y = percentage, x = Publication_year.2, fill = type), 
+  #                  stat = "identity", colour = "black", pattern = "circle") +
+  geom_bar(aes(y = percentage, x = Publication_year.2, fill = type), stat = "identity", colour = "black") +
   geom_hline(yintercept = mean.stated.version.Culina, color = "red", linetype = "dashed") +
   labs(y = "Percentage (%) of articles", fill = "Reported software \nversions") +
   scale_fill_manual(values = fill) +
@@ -691,7 +704,8 @@ full.summary.package.version$code.sharing.policy <- "No"
 full.summary.package.version
 
 
-fill <- c("grey98", "grey5")
+#fill <- c("grey98", "grey5")
+fill <- c("cadetblue2", "cadetblue4")
 
 mean.stated.package.version <- mean(full.summary.package.version[full.summary.package.version$type=="Yes","percentage"])
 
@@ -778,7 +792,8 @@ full.summary.package.version.Culina
 # write.xlsx(full.summary, "results/full_Code_summary.xlsx")
 
 
-fill <- c("grey98", "grey5")
+#fill <- c("grey98", "grey5")
+fill <- c("lightblue1", "lightblue4")
 
 mean.stated.package.version.Culina <- mean(full.summary.package.version.Culina[full.summary.package.version.Culina$type=="Yes","percentage"])
 
@@ -787,8 +802,9 @@ mean.stated.package.version.Culina <- mean(full.summary.package.version.Culina[f
 figure3f <- full.summary.package.version.Culina %>%
   mutate(type = factor(type, levels = c("No","Yes"))) %>%
   ggplot() +
-  geom_bar_pattern(aes(y = percentage, x = Publication_year.2, fill = type), 
-                   stat = "identity", colour = "black", pattern = "circle") +
+  # geom_bar_pattern(aes(y = percentage, x = Publication_year.2, fill = type), 
+  #                  stat = "identity", colour = "black", pattern = "circle") +
+  geom_bar(aes(y = percentage, x = Publication_year.2, fill = type), stat = "identity", colour = "black") +
   geom_hline(yintercept = mean.stated.package.version.Culina, color = "red", linetype = "dashed") +
   labs(y = "Percentage (%) of articles", fill = "Reported package \nversions") +
   scale_fill_manual(values = fill) +
@@ -860,7 +876,8 @@ full.summary.free$code.sharing.policy <- "No"
 full.summary.free
 
 
-fill <- c("grey98", "grey35", "grey5")
+#fill <- c("grey98", "grey35", "grey5")
+fill <- c("cadetblue2", "cadetblue3", "cadetblue4")
 
 mean.free <- mean(full.summary.free[full.summary.free$type=="All free","percentage"])
 
@@ -937,7 +954,8 @@ full.summary.free.Culina$code.sharing.policy <- "Yes"
 full.summary.free.Culina
 
 
-fill <- c("grey98", "grey35", "grey5")
+#fill <- c("grey98", "grey35", "grey5")
+fill <- c("lightblue1", "lightblue3", "lightblue4")
 
 mean.free.Culina <- mean(full.summary.free.Culina[full.summary.free.Culina$type=="All free","percentage"])
 
@@ -946,8 +964,9 @@ mean.free.Culina <- mean(full.summary.free.Culina[full.summary.free.Culina$type=
 figure3h <- full.summary.free.Culina %>%
   mutate(type = factor(type, levels = c("None free", "Partially free", "All free"))) %>%
   ggplot() +
-  geom_bar_pattern(aes(y = percentage, x = Publication_year.2, fill = type), 
-                   stat = "identity", colour = "black", pattern = "circle") +
+  # geom_bar_pattern(aes(y = percentage, x = Publication_year.2, fill = type), 
+  #                  stat = "identity", colour = "black", pattern = "circle") +
+  geom_bar(aes(y = percentage, x = Publication_year.2, fill = type), stat = "identity", colour = "black") +
   geom_hline(yintercept = mean.free.Culina, color = "red", linetype = "dashed") +
   labs(y = "Percentage (%) of articles", fill = "Software type") +
   scale_fill_manual(values = fill) +
