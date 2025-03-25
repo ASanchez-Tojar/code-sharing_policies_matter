@@ -18,11 +18,11 @@
 
 ---
 
-Alfredo Sánchez-Tójar, Aya Bezine, Marija Purgar, Antica Culina. 2024. **Code-sharing policies are associated with increased reproducibility potential of ecological findings**. EcoEvoRxiv. Preprint available at: [DOI](https://doi.org/10.32942/X21S7H)
+Alfredo Sánchez-Tójar, Aya Bezine, Marija Purgar, Antica Culina. 2025. **Code-sharing policies are associated with increased reproducibility potential of ecological findings**. EcoEvoRxiv. Preprint available at: [DOI](https://doi.org/10.32942/X21S7H)
 
 ---
 
-The repository consists of an Rproject with 3 scripts and 3 folders containing the data either needed to run these scripts or created by these scripts, including the figures. For a detailed description of all the files, please see below. To run this repository, first download and unzipped the entire repository and open the Rproject file: [analyses.Rproj](https://github.com/ASanchez-Tojar/code-sharing_policies_matter/blob/main/analyses.Rproj). The scripts are named in the order that they should be run, from 001 to 003. For any further information about this repository, please contact: [Alfredo Sánchez-Tójar](https://scholar.google.co.uk/citations?hl=en&user=Sh-Rjq8AAAAJ&view_op=list_works&sortby=pubdate), email: alfredo.tojar@gmail.com. 
+The repository consists of an R project with 3 scripts and 3 folders containing the data either needed to run these scripts or created by these scripts, including the figures. For a detailed description of all the files, please see below. To run this repository, first download and unzip the entire repository and open the Rproject file: [analyses.Rproj](https://github.com/ASanchez-Tojar/code-sharing_policies_matter/blob/main/analyses.Rproj). The scripts are named in the order that they should be run, from 001 to 003. For any further information about this repository, please contact: [Alfredo Sánchez-Tójar](https://scholar.google.co.uk/citations?hl=en&user=Sh-Rjq8AAAAJ&view_op=list_works&sortby=pubdate), email: alfredo.tojar@gmail.com. 
 
 
 ## Information about folders and files within:
